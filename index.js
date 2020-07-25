@@ -8,8 +8,8 @@ if (votingAge > 18) {
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-let votingAge = 17
-if (votingAge > 18){
+let votingAge = 18
+if (votingAge >= 18){
 console.log("you are old enough to vote")
 }
 else {
@@ -64,6 +64,40 @@ function doMultiplication (a, b){
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
+
+function roshambo (input){
+  let rps = ["rock", "paper", "scissors"]
+  
+  let randomNumber = Math.floor(Math.random() * 3)
+  let cc = rps[randomNumber]
+
+  if (input === cc){
+    console.log("you tied")
+  } 
+  else if (input === "rock" && cc === "paper") {
+    console.log("you lose")
+  }
+  else if (input === "rock" && cc === "scissors") {
+    console.log("you win")
+  }
+  else if (input === "paper" && cc === "rock") {
+    console.log("you win")  
+  } 
+  else if (input === "paper" && cc === "scissors") {
+    console.log("you lose")
+  }
+  else if (input === "scissors" && cc === "rock") {
+    console.log("you lose")
+  }
+  else if (input === "scissors" && cc === "paper") {
+    console.log("you win")
+  }
+    
+  console.log(cc)
+}
+
+
+
 
 
 
