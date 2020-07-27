@@ -29,8 +29,9 @@ parseInt("1999")
 //Task d: Write a function to multiply a*b
 
 function doMultiplication (a, b){
-  return a*b
+  return a * b
   }
+  doMultiplication(2, 4)
 
 
 
@@ -102,15 +103,7 @@ function dogFeed(weight, age){
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
 
-function dogFeeder (age, weight){
- 
-  let percentWeight = age/weight
-   if (age >= 1)
-     if (weight <= 5) {
-   percentWeight = 0.05
-     console.log(weight * percentWeight)
-     }
-   }
+
 
 
 
