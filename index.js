@@ -146,6 +146,8 @@ function roshambo (input){
 }
 
 
+
+
 let input = prompt ("Do you choose rock, paper or scissors?")
   let rps = ["rock", "paper", "scissors"]
   let randomNumber = Math.floor(Math.random() * 3)
@@ -205,27 +207,26 @@ console.log(centimeters + " centimeters ");
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-
+function annoyingSong(input){
 let bottles;
- for (counter = 99; counter >= 1; counter = counter - 1) 
-{
-     if (counter == 1) {
-        bottles = 'bottle';
+  for (counter = 99; counter >= 1; counter = counter - 1) {
+    if (counter == 1) {
+      bottles = 'bottle';
     } else {
-        bottles = 'bottles';
+      bottles = 'bottles';
     }
-    console.log(counter+" "+bottles+" of soda on the wall.");
+    console.log(counter + " " + bottles + " of soda on the wall.");
     if (counter < 99) {
-        console.log("");
-        console.log(counter+" "+bottles+" of soda on the wall.");
+      console.log("");
+      console.log(counter + " " + bottles + " of soda on the wall.");
     }
-    console.log(counter+" "+bottles+" of soda.");
+    console.log(counter + " " + bottles + " of soda.");
     console.log("Take one down.");
     console.log("Pass it around.");
     if (counter == 1) {
-        console.log("No bottles of soda on the wall.");
+      console.log("No bottles of soda on the wall.");
     }
-
+  }
 
 
 /************************************************************** Task 7 **************************************************************/
